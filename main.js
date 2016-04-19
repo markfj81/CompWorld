@@ -120,7 +120,7 @@ AM.downloadAll(function () {
     gameEngine.init(ctx);
     gameEngine.start();
 
-    gameEngine.addEntity(new Background(gameEngine, AM.getAsset("./img/background.jpg")));
-    gameEngine.addEntity(new Volt(gameEngine, AM.getAsset("./img/Volt.png")));
-	gameEngine.addEntity(new Bird(gameEngine, AM.getAsset("./img/theBirdxx.png"),AM.getAsset("./img/theBird.png")));
+    gameEngine.addEntity(new Background(gameEngine, AM.getAsset("background.jpg")));
+    gameEngine.addEntity(new Volt(gameEngine, AM.getAsset("Volt.png")));
+	gameEngine.addEntity(new Bird(gameEngine, AM.getAsset("theBirdxx.png"),AM.getAsset("theBird.png")));
 });
