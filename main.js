@@ -107,10 +107,10 @@ Bird.prototype.draw = function () {
 	Entity.prototype.draw.call(this);
 }
 
-AM.queueDownload("https://github.com/markfj81/CompWorld/blob/gh-pages/Volt.png");
-AM.queueDownload("https://github.com/markfj81/CompWorld/blob/gh-pages/theBirdXX.png");
-AM.queueDownload("https://github.com/markfj81/CompWorld/blob/gh-pages/theBird.png");
-AM.queueDownload("https://github.com/markfj81/CompWorld/blob/gh-pages/background.jpg");
+AM.queueDownload("./Volt.png");
+AM.queueDownload("./theBirdXX.png");
+AM.queueDownload("./theBird.png");
+AM.queueDownload("./background.jpg");
 
 AM.downloadAll(function () {
     var canvas = document.getElementById("gameWorld");
@@ -120,7 +120,7 @@ AM.downloadAll(function () {
     gameEngine.init(ctx);
     gameEngine.start();
 
-    gameEngine.addEntity(new Background(gameEngine, AM.getAsset("https://github.com/markfj81/CompWorld/blob/gh-pages/background.jpg")));
-    gameEngine.addEntity(new Volt(gameEngine, AM.getAsset("https://github.com/markfj81/CompWorld/blob/gh-pages/Volt.png")));
-	gameEngine.addEntity(new Bird(gameEngine, AM.getAsset("https://github.com/markfj81/CompWorld/blob/gh-pages/theBirdXX.png"),AM.getAsset("https://github.com/markfj81/CompWorld/blob/gh-pages/theBird.png")));
+    gameEngine.addEntity(new Background(gameEngine, AM.getAsset("./background.jpg")));
+    gameEngine.addEntity(new Volt(gameEngine, AM.getAsset("./Volt.png")));
+	gameEngine.addEntity(new Bird(gameEngine, AM.getAsset("./theBirdXX.png"),AM.getAsset("./theBird.png")));
 });
