@@ -91,7 +91,7 @@ GameEngine.prototype.update = function () {
         var entity = this.entities[i];
 
         if (!entity.removeFromWorld) {
-            entity.update();ec
+            entity.update();
         }
     }
 
