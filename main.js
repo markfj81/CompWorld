@@ -107,10 +107,10 @@ Bird.prototype.draw = function () {
 	Entity.prototype.draw.call(this);
 }
 
-AM.queueDownload("./img/Volt.png");
-AM.queueDownload("./img/theBirdxx.png");
-AM.queueDownload("./img/theBird.png");
-AM.queueDownload("./img/background.jpg");
+AM.queueDownload("Volt.png");
+AM.queueDownload("theBirdxx.png");
+AM.queueDownload("theBird.png");
+AM.queueDownload("background.jpg");
 
 AM.downloadAll(function () {
     var canvas = document.getElementById("gameWorld");
